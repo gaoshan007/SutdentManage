@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="default" extends="struts-default">
+		<action name="browseCategory" class="categoryAction" method="browseCategory">
+			<!-- <result name="success">/menu.jsp</result> -->
+			<result name="success">/menu.jsp</result>
+		</action>
+		
+		<action name="browseNewItem" class="categoryAction" method="browseNewItem">
+			<result name="success">/newItem.jsp</result>
+		</action>
+		
+		<action name="brwoseItemPaging" class="categoryAction" method="brwoseItemPaging">
+			<result name="success">/browseItemPaging.jsp</result>
+		</action>
+		
+		<action name="checkUser" class="userAction" method="checkUser">
+			<result name="success">/admin_main.jsp</result>
+			<result name="error">/admin_failure.jsp</result>
+		</action>
+		
+		<action name="logOut" class="userAction" method="logOut">
+			<result name="success">/index.jsp</result>
+		</action>
+		
+		<action name="addOrUpdateItem" class="categoryAction" method="addOrUpdateItem">
+			<result name="success">/addNewItem_success.jsp</result>
+			<result name="error">/addNewItem.jsp</result>
+			<result name="input">/addNewItem.jsp</result>
+		</action>
+		
+		<action name="managerItem" class="categoryAction" method="browseAllItemPaging">
+			<result name="success">/browseAllItemPaging.jsp</result>
+		</action>
+		
+		<action name="displayOneItem" class="categoryAction" method="displayOneItem">
+			<result name="success">/displayOneItem.jsp</result>
+		</action>
+
+		<action name="displayItem" class="categoryAction" method="displayItem">
+			<result name="success">/displayItem.jsp</result>
+		</action>
+
+		
+		<action name="deleteOneItem" class="categoryAction" method="deleteOneItem">
+			<result name="success">/deleteOneItem_success.jsp</result>
+		</action>
+		
+		
+	</package>
+</struts>    
